@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+ 
 class RestaurantTableViewCell: UITableViewCell {
     
     @IBOutlet var nameLabel: UILabel!
