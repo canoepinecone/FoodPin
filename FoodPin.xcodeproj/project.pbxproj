@@ -12,6 +12,7 @@
 		72F4748E202A6C6B00EA7CAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72F4748D202A6C6B00EA7CAF /* Assets.xcassets */; };
 		72F47491202A6C6B00EA7CAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F4748F202A6C6B00EA7CAF /* LaunchScreen.storyboard */; };
 		72F47499202A6D1B00EA7CAF /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F47498202A6D1B00EA7CAF /* RestaurantTableViewController.swift */; };
+		72F4749B202AB6D800EA7CAF /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F4749A202AB6D800EA7CAF /* RestaurantTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		72F47490202A6C6B00EA7CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72F47492202A6C6B00EA7CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72F47498202A6D1B00EA7CAF /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
+		72F4749A202AB6D800EA7CAF /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				72F4748F202A6C6B00EA7CAF /* LaunchScreen.storyboard */,
 				72F47492202A6C6B00EA7CAF /* Info.plist */,
 				72F47498202A6D1B00EA7CAF /* RestaurantTableViewController.swift */,
+				72F4749A202AB6D800EA7CAF /* RestaurantTableViewCell.swift */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72F47499202A6D1B00EA7CAF /* RestaurantTableViewController.swift in Sources */,
+				72F4749B202AB6D800EA7CAF /* RestaurantTableViewCell.swift in Sources */,
 				72F47487202A6C6B00EA7CAF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
