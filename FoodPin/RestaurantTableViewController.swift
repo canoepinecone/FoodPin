@@ -78,13 +78,16 @@ class RestaurantTableViewController: UITableViewController {
         }
         
         let callAction = UIAlertAction(title: "Call " + "123-000-\(indexPath.row)", style: .default, handler: callActionHandler)
-        
-        let checkInAction = UIAlertAction(title: "Check in", style: .default, handler: {
+        var checkedIn = restaurantIsVisited[indexPath.row]
+        let checkTitle = checkedIn ? "Undo check in" : "Check in"
+        let checkInAction = UIAlertAction(title: checkTitle, style: .default, handler: {
             (action:UIAlertAction!) -> Void in
             
             let cell = tableView.cellForRow(at: indexPath)
-            cell?.accessoryType = .checkmark
-            self.restaurantIsVisited[indexPath.row] = true
+            checkedIn = !checkedIn
+            self.restaurantIsVisited[indexPath.row] = checkedIn
+            cell?.accessoryType = checkedIn ? .checkmark : .none
+            
         })
         
         optionMenu.addAction(callAction)
