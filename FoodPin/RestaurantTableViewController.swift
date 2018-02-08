@@ -91,6 +91,13 @@ class RestaurantTableViewController: UITableViewController {
         optionMenu.addAction(checkInAction)
         optionMenu.addAction(cancelAction)
         
+        if let popoverController = optionMenu.popoverPresentationController {
+            if let cell = tableView.cellForRow(at: indexPath) {
+                popoverController.sourceView = cell
+                popoverController.sourceRect = cell.bounds
+            }
+        }
+        
         present(optionMenu, animated: true, completion: nil)
         
         tableView.deselectRow(at: indexPath, animated: false)
